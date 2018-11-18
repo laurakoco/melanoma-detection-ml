@@ -31,11 +31,11 @@ Since Neural Networks are a form of supervised learning, training, testing, and 
 
 - Sample image of Melanoma:
 
-![](images/Melanoma.jpg?raw=true)
+![](images/Melanoma.jpg =250x)
 
 - Sample image of Non-Melanoma:
 
-![](images/Non-Melanoma.jpg?raw=true)
+![](images/Non-Melanoma.jpg =250x)
 
 I have a combined dataset of 2,148 images. This dataset is divided into subsets for testing, training, and validation: 70%, 20%, and 10%, respectively. The details of the subsets may be seen below.
 
@@ -46,7 +46,7 @@ I have a combined dataset of 2,148 images. This dataset is divided into subsets 
 | Validation |    106   |      108     |
 |    **Total**   |   1,071  |     1,077    |
 
-My dataset can be found [here](link to dataset)
+My dataset can be downloaded [here](https://www.dropbox.com/s/8ye8pi3qpw2vl2n/data.zip?dl=0)
 
 This directory is stored locally on my machine with the following structure:
 
@@ -75,10 +75,10 @@ data /
 
 The CNN built in Keras is able to achieve an overall accuracy of X % on testing data not exposed to the CNN during training:
 
-|:-----------:|:-:|
 |   Accuracy  | X |
-| Sensitivity | X |
-| Specificity | X |
+|:-----------:|:-:|
+| Sensitivity | Y |
+| Specificity | Z |
 
 
 ## Author
