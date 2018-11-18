@@ -31,11 +31,11 @@ Since Neural Networks are a form of supervised learning, training, testing, and 
 
 - Sample image of Melanoma:
 
-![](images/Melanoma.jpg =250x)
+<img src="images/Melanoma.jpg" width="200">
 
 - Sample image of Non-Melanoma:
 
-![](images/Non-Melanoma.jpg =250x)
+<img src="images/Non-Melanoma.jpg" width="200">
 
 I have a combined dataset of 2,148 images. This dataset is divided into subsets for testing, training, and validation: 70%, 20%, and 10%, respectively. The details of the subsets may be seen below.
 
