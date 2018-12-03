@@ -32,7 +32,7 @@ The source code for both models may be found in /src.
 
 The block diagram of the Keras model may be seen below.
 
-<img src="images/Keras_Block.png" height="600">
+<img src="images/Keras_Block.png" width="600">
 
 The AlexNet CNN architecture may be seen below. AlexNet is a popular CNN that was trained on subsets of ImageNet database used in the ILSVRC-2010 and ILSVRC-2012 competitions. The ImageNet database has over 15 million labeled, high-resolution images belonging to 22,000 categories. AlexNet is 8 layers deep and can classify images into 1000 categories, such as keyboard, mouse, pencil, etc.
 
@@ -120,7 +120,7 @@ The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testin
 
 ### AlexNet-Based CNN
 
-The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (30 epochs).
+The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (30 epochs). Below shows the accuracy, sensitivity, and specificty on the testing data.
 
 |   Accuracy  | 90.2 |
 |:-----------:|:-:|
