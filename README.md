@@ -19,7 +19,7 @@ Melanoma evolves from the rapid growth of melanin-producing cells, Melanocytes, 
 * TensorFlow
 * Keras
 * Python
-* MATLAB Deep Learning Toolbox
+* MATLAB's Deep Learning Toolbox
 
 ## Models
 
@@ -32,7 +32,7 @@ The source code for both models may be found in /src.
 
 The block diagram of the Keras model may be seen below.
 
-<img src="images/Keras_Block.png" width="600">
+<img src="images/Keras_Block.png" height="600">
 
 The AlexNet CNN architecture may be seen below. AlexNet is a popular CNN that was trained on subsets of ImageNet database used in the ILSVRC-2010 and ILSVRC-2012 competitions. The ImageNet database has over 15 million labeled, high-resolution images belonging to 22,000 categories. AlexNet is 8 layers deep and can classify images into 1000 categories, such as keyboard, mouse, pencil, etc.
 
@@ -69,11 +69,11 @@ The details of this dataset may be seen below.
 
 - Sample images of Melanoma from the dataset:
 
-<img src="images/Melanoma.jpg" width="200"> <img src="images/Melanoma_2.jpg" width="200">
+<img src="images/Melanoma.jpg" height="200"> <img src="images/Melanoma_2.jpg" height="200">
 
 - Sample images of Non-Melanoma from the dataset:
 
-<img src="images/Non-Melanoma.jpg" width="200"> <img src="images/Non-Melanoma_2.jpg" width="200">
+<img src="images/Non-Melanoma.jpg" height="200"> <img src="images/Non-Melanoma_2.jpg" height="200">
 
 ### Directory Structure
 
@@ -109,12 +109,16 @@ data /
 
 ## Results
 
-The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testing data not exposed to the CNN during training. This is actually good for such a simple CNN. This model takes about 10 minutes (12 epochs) to train on my MacBook Pro. While this CNN is simple and straightforward to understand, it does not yield the same level of accuracy as a deeper CNN.
+### Keras CNN
+
+The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testing data not exposed to the CNN during training. This is actually good for such a simple CNN. This model takes about 10 minutes (12 epochs) to train on my MacBook Pro. While this CNN is simple and straightforward to understand, it does not yield the same level of accuracy as a deeper CNN. Below shows the accuracy, sensitivity, and specificty on the testing data.
 
 |   Accuracy  | 78.8 |
 |:-----------:|:-:|
 | Sensitivity | 69.2 |
 | Specificity | 88.3 |
+
+### AlexNet-Based CNN
 
 The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (30 epochs).
 
@@ -122,6 +126,12 @@ The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on t
 |:-----------:|:-:|
 | Sensitivity | 89.2 |
 | Specificity | 91.2 |
+
+Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma. As you can see, this model classifies images very well.
+
+<img src="images/AlexNet_Classification.jpg" width="1000">
+
+<img src="images/AlexNet_Classification_2.jpg" width="1000">
 
 ## Author
 
