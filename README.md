@@ -118,7 +118,7 @@ The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testin
 | Sensitivity | 69.2 |
 | Specificity | 88.3 |
 
-### AlexNet-Based CNN
+### Deep AlexNet-Based CNN
 
 The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (30 epochs). Below shows the accuracy, sensitivity, and specificty on the testing data.
 
@@ -129,9 +129,9 @@ The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on t
 
 Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma. As you can see, this model classifies images very well.
 
-<img src="images/AlexNet_Classification.jpg" width="1000">
+<img src="images/AlexNet_Classification.jpg" width="1000" align="left">
 
-<img src="images/AlexNet_Classification_2.jpg" width="1000">
+<img src="images/AlexNet_Classification_2.jpg" width="1000" align="left">
 
 ## Author
 
