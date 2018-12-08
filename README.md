@@ -120,18 +120,31 @@ The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testin
 
 ### Deep AlexNet-Based CNN
 
-The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (30 epochs). Below shows the accuracy, sensitivity, and specificty on the testing data.
+The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (20 epochs = 450 minutes). This model had a learning rate = 1e-5 and uses Stochastic Gradient Descent with Momentum (SGDM) optimizer. Momentum = 0.9 (default). Below shows the accuracy, sensitivity, and specificty on the testing data.
 
 |   Accuracy  | 90.2 |
 |:-----------:|:-:|
 | Sensitivity | 89.2 |
 | Specificity | 91.2 |
 
-Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma. As you can see, this model classifies images very well.
+
+Below is the training data for this model.
+
+<img src="images/AlexNet_Training.png" width="1000" align="left">
+
+Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma not exposed to the CNN during trainingg. As you can see, this model classifies images very well with accuracy > 90%.
 
 <img src="images/AlexNet_Classification.jpg" width="1000" align="left">
 
 <img src="images/AlexNet_Classification_2.jpg" width="1000" align="left">
+
+### Implications
+
+An important question to ask ourselves is what accuracy is good enough? A small study published in 2018, dermatologists accurately diagnosed Melanoma (sensitivity) with 86.6% and 88.9% accuracy, depending on the stage of the Melanoma [1]. This CNN is able to detect Melanoma with higher accuracy than a dermatologist. It’s possible a dermatologist or other doctors not specialized in dermatology (e.g. primary care physician) may use a CNN as a tool to aid the diagnosis of Melanoma.
+
+## Future Work
+
+I plan to improve this accuracy further by automating image pre-processing and/or obtaining a larger dataset. I also plan to integrate this model into a website or app so that users may upload an image and see the associate risk of the mole.
 
 ## Author
 
@@ -141,5 +154,9 @@ Below are AlexNet-based model predictions (and associated probability) on images
 
 * Boston University MET Master Science Computer Science Program
 * MET CS 767 Machine Learning
+
+## References
+
+[1] Haenssle, H. A., C Fink, R. Schneiderbauer, F. Toberer, T. Buhl, A. Blum, A. Kalloo, A. Ben Hadj Hassen, L. Thomas A Enk and L. Uhlmann. “Man Against Machine: Diagnostic Performance of a Deep Learning Convolutional Neural Network for Dermoscopic Melanoma Recognition in Comparison to 58 Dermatologists.” Annals of Oncology, August 2018.
 
 # melanoma_detection_ml
