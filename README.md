@@ -111,7 +111,12 @@ data /
 
 ### Keras CNN
 
-The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testing data not exposed to the CNN during training. This is actually good for such a simple CNN. This model takes about 10 minutes (12 epochs) to train on my MacBook Pro. While this CNN is simple and straightforward to understand, it does not yield the same level of accuracy as a deeper CNN. Below shows the accuracy, sensitivity, and specificty on the testing data.
+The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testing data not exposed to the CNN during training. This is actually good for such a simple CNN. This model takes about 10 minutes (12 epochs) to train on my MacBook Pro. While this CNN is simple and straightforward to understand, it does not yield the same level of accuracy as a deeper CNN. Below shows the accuracy, sensitivity, and specificty on the testing data. This model has the following parameters:
+
+- Adam optizmier (default parameters) [1]
+- Fully-connected neurons = 512
+- 3 Conv2D layers
+- Epochs = 12
 
 |   Accuracy  | 78.8 |
 |:-----------:|:-:|
@@ -120,17 +125,21 @@ The CNN built in Keras is able to achieve an overall accuracy of 78.8% on testin
 
 ### Deep AlexNet-Based CNN
 
-The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (20 epochs = 450 minutes). This model had a learning rate = 1e-5 and uses Stochastic Gradient Descent with Momentum (SGDM) optimizer. Momentum = 0.9 (default). Below shows the accuracy, sensitivity, and specificty on the testing data.
+The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on testing data not exposed to the CNN during training. This takes quite a long time to run (20 epochs = 450 minutes). Below shows the accuracy, sensitivity, and specificty on the testing data. This model has the following parameters:
+
+- Stochastic Gradient Descent with Momentum (SGDM) optimizer; momentum = 0.9
+- Learning rate = 1e-5
+- Epochs = 20
 
 |   Accuracy  | 90.2 |
 |:-----------:|:-:|
 | Sensitivity | 89.2 |
 | Specificity | 91.2 |
 
-
 Below is the training data for this model.
 
 <img src="images/AlexNet_Training.png" width="1000" align="left">
+
 
 Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma not exposed to the CNN during trainingg. As you can see, this model classifies images very well with accuracy > 90%.
 
@@ -140,7 +149,7 @@ Below are AlexNet-based model predictions (and associated probability) on images
 
 ### Implications
 
-An important question to ask ourselves is what accuracy is good enough? A small study published in 2018, dermatologists accurately diagnosed Melanoma (sensitivity) with 86.6% and 88.9% accuracy, depending on the stage of the Melanoma [1]. This CNN is able to detect Melanoma with higher accuracy than a dermatologist. It’s possible a dermatologist or other doctors not specialized in dermatology (e.g. primary care physician) may use a CNN as a tool to aid the diagnosis of Melanoma.
+An important question to ask ourselves is what accuracy is good enough? A small study published in 2018, dermatologists accurately diagnosed Melanoma (sensitivity) with 86.6% and 88.9% accuracy, depending on the stage of the Melanoma [2]. This CNN is able to detect Melanoma with higher accuracy than a dermatologist. It’s possible a dermatologist or other doctors not specialized in dermatology (e.g. primary care physician) may use a CNN as a tool to aid the diagnosis of Melanoma.
 
 ## Future Work
 
@@ -157,6 +166,8 @@ I plan to improve this accuracy further by automating image pre-processing and/o
 
 ## References
 
-[1] Haenssle, H. A., C Fink, R. Schneiderbauer, F. Toberer, T. Buhl, A. Blum, A. Kalloo, A. Ben Hadj Hassen, L. Thomas A Enk and L. Uhlmann. “Man Against Machine: Diagnostic Performance of a Deep Learning Convolutional Neural Network for Dermoscopic Melanoma Recognition in Comparison to 58 Dermatologists.” Annals of Oncology, August 2018.
+[1] Kingma, Diederik, and Jimmy Ba. “Adam: A Method for Stochastic Optimization.” 3rd International Conference for Learning Representations, San Diego, 2015.
+
+[2] Haenssle, H. A., C Fink, R. Schneiderbauer, F. Toberer, T. Buhl, A. Blum, A. Kalloo, A. Ben Hadj Hassen, L. Thomas A Enk and L. Uhlmann. “Man Against Machine: Diagnostic Performance of a Deep Learning Convolutional Neural Network for Dermoscopic Melanoma Recognition in Comparison to 58 Dermatologists.” Annals of Oncology, August 2018.
 
 # melanoma_detection_ml
