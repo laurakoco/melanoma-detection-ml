@@ -139,9 +139,8 @@ The deep, AlexNet-based CNN is able to achieve an overall accuracy of 90.2% on t
 Below is the training data for this model.
 
 <img src="images/AlexNet_Training.png" width="1000" align="left">
-
-
-Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma not exposed to the CNN during trainingg. As you can see, this model classifies images very well with accuracy > 90%.
+<br>
+Below are AlexNet-based model predictions (and associated probability) on images on Melanoma and Non-Melanoma not exposed to the CNN during training. As you can see, this model classifies images very well with accuracy > 90%.
 
 <img src="images/AlexNet_Classification.jpg" width="1000" align="left">
 
