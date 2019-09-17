@@ -162,7 +162,7 @@ I plan to improve this accuracy further by automating image pre-processing and/o
 
 ## Acknowledgments
 
-* Boston University MET Master Science Computer Science Program
+* Boston University MET Master of Science Computer Science Program
 * MET CS 767 Machine Learning
 
 ## References
